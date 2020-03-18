@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints
+  xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime"
+  version="2.0">
+  <endpoint
+      name="wsbank"
+      implementation="com.wsbank.Wsbank"
+      url-pattern="/wsbank"/>
+  <endpoint
+      name="validasiRek"
+      implementation="com.wsbank.ValidasiRek"
+      url-pattern="/wsbank/validasiRek"/>
+  <endpoint
+      name="getDataNasabah"
+      implementation="com.wsbank.InfoRekeningNasabah"
+      url-pattern="/wsbank/getDataNasabah"/>
+  <endpoint
+      name="createVA"
+      implementation="com.wsbank.CreateVirtualAcc"
+      url-pattern="/wsbank/createVirtualAcc"/>
+  <endpoint
+      name="CekKredit"
+      implementation="com.wsbank.CekKredit"
+      url-pattern="/wsbank/cekKredit"/>
+  <endpoint
+      name="Transfer"
+      implementation="com.wsbank.Transfer"
+      url-pattern="/wsbank/transfer"/>
+</endpoints>
